@@ -1,13 +1,27 @@
+.about-header{
+    text-align: center;
+    text-decoration: underline;
+}
+
 .about{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media @mobile{
+        flex-direction: column;
+        align-items: center;
+    }//closing brackets for .about @media
 
     .about-container{
         display: flex;
         flex-direction: column;
         width:25%;
         margin: 2%;
+
+        @media @mobile{
+            width: 50%
+        }//closing brackets for .about .about-container @media
 
         h3{
             font-size: 2.5rem;
