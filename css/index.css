@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Caveat', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Righteous', cursive;
+}
+h1 {
+  font-size: 4rem;
+  color: darkslategray;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+  color: darkslategray;
+}
+h3 {
+  color: darkslategray;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 2.2rem;
+  padding-bottom: 10px;
+  color: lightslategray;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container .nav-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+.nav-container .nav-links {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-container .nav-links {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.nav-container .nav-links a {
+  margin: 2%;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.footer p {
+  text-align: center;
+  color: black;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .header-img {
+  border-top: 1px dashed gray;
+}
+header .header-img img {
+  width: 100%;
+  height: fit-content;
+}
+header .header-one {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dashed gray;
+}
+header .header-one h2 {
+  margin-top: 2%;
+}
+.content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .content-section .text-content {
+    width: 100%;
+  }
+}
+.content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .content-section .img-content {
+    width: 100%;
+  }
+}
+.content-section .img-content img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .content-section .img-content img {
+    width: 100%;
+  }
+}
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+@media (max-width: 500px) {
+  .inverse-content .text-content {
+    width: 100%;
+  }
+}
+.inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  .inverse-content .img-content {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content .img-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.content-destination {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+  }
+}
+.content-destination .content-destination1 {
+  display: flex;
+}
+.content-destination .content-destination2 {
+  display: flex;
+}
+.content-destination img {
+  border-radius: 50px;
+  width: 33%;
+  height: fit-content;
+  padding: 0.5%;
+}
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.content-pick .destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 75%;
+  }
+}
+.content-pick .destination .btn {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .content-pick .destination .btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+.content-pick .destination button {
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  padding: 4% 25%;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.content-pick .destination button:hover {
+  color: black;
+  background-color: tomato;
+}
+@media (max-width: 500px) {
+  .content-pick .destination button {
+    padding: 4% 36%;
+  }
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about .about-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 2%;
+}
+.about .about-container h3 {
+  font-size: 2.5rem;
+}
+.about .about-img {
+  width: auto;
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7ZjYd.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}

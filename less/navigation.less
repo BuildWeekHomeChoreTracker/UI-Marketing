@@ -1,0 +1,40 @@
+.nav-container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    @media @mobile{
+        flex-direction: column;
+    }//closing bracket for @mobile media
+
+    .nav-title{
+        
+        @media @mobile{
+            display:flex;
+            justify-content: center;
+        }//closing bracket for .nav-title @mobile
+    }//closing bracket for .nav-container .nav-title
+
+
+    .nav-links{
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+        align-items: center;
+    
+
+        @media @mobile{
+            justify-content: center;
+            width: 100%;
+        }//closing tag for .nav-links @mobile
+
+            a{
+                margin: 2%;
+                text-decoration: none;
+                font-size: 3rem;
+            }//closing bracket for .nav-container .nav-links a
+
+    }//closing bracket for .nav-links
+
+}//closing bracket for .nav-container
