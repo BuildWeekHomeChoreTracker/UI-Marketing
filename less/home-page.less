@@ -26,8 +26,7 @@ header{
   .content-section {
     margin: 30px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
 
    @media @mobile{
       flex-direction: column;
@@ -47,6 +46,8 @@ header{
     .img-content {
       width: 48%;
       padding-left: 1%;
+      display: flex;
+      justify-content: center;
 
       @media @mobile{
         width: 100%;
@@ -117,6 +118,12 @@ header{
     .content-destination2{
       display: flex;
 
+      @media @mobile{
+        display: flex;
+        justify-content: space-evenly;
+
+      }//closing brackets for .content-destination .content-destination 2 @mobile
+
     }//closing brackets for .contentdestination .contentdestination2
 
     img {
@@ -135,11 +142,12 @@ header{
   
   }
 
-  .content-pick {
+  .content-destination {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     @media @mobile{
       flex-direction: column;
@@ -163,6 +171,7 @@ header{
         @media @mobile{
           display: flex;
           justify-content: center;
+          width: 80%;
         }//closing bracket for .btn @mobile
 
       }//closing bracket for .content-pick .destination .btn
