@@ -332,6 +332,12 @@ header .header-one h2 {
   height: fit-content;
   padding: 0.5%;
 }
+@media (max-width: 500px) {
+  .content-destination img {
+    width: 25%;
+    height: 150px;
+  }
+}
 .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
