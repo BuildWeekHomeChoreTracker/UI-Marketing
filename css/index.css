@@ -145,15 +145,15 @@ h5 {
 }
 h1 {
   font-size: 4rem;
-  color: darkslategray;
+  color: #2F4F4F;
 }
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
-  color: darkslategray;
+  color: #2F4F4F;
 }
 h3 {
-  color: darkslategray;
+  color: #2F4F4F;
 }
 h4 {
   font-size: 2.5rem;
@@ -163,7 +163,7 @@ p {
   line-height: 1.5;
   font-size: 2.2rem;
   padding-bottom: 10px;
-  color: lightslategray;
+  color: #4682B4;
 }
 img {
   max-width: 100%;
@@ -280,7 +280,7 @@ header .header-one h2 {
 }
 .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #B0C4DE;
 }
 .inverse-content .text-content {
   padding-left: 1%;
@@ -346,7 +346,7 @@ header .header-one h2 {
 }
 .content-destination {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #B0C4DE;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,6 +433,11 @@ header .header-one h2 {
   font-size: 2rem;
   border-radius: 10px;
   font-family: 'Caveat', cursive;
+  color: white;
+}
+.about .about-container button:hover {
+  color: black;
+  background-color: tomato;
 }
 .about .about-img {
   width: auto;
