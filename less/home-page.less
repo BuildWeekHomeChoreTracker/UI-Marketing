@@ -3,18 +3,19 @@ header{
     flex-direction: column;
 
     .header-img{
-      border-top: 1px dashed gray;
+      
 
       img{
         width: 100%;
         height: fit-content;
+        border-radius: 10px;
       }//closing bracket for header .header-img img
     }//bracket that closes .home .header .header-img
 
     .header-one{
       display: flex;
       flex-direction: column;
-      border-bottom: 1px dashed gray;
+      border-bottom: 2px dashed @navigation-border;
 
       h2{
         margin-top: 2%;
@@ -34,7 +35,15 @@ header{
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
+      padding-right: 2%;
+
+      ul{
+        list-style-type: circle;
+        font-size: 2rem;
+        list-style-position: inside;
+        color: burlywood;
+
+      }//closing brackets for .content-section .text-content ul
 
       @media @mobile{
         width: 100%;
@@ -54,6 +63,7 @@ header{
 
       img {
         border-radius: 10px;
+        width: -webkit-fill-available;
 
         @media @mobile{
           width: 100%;
@@ -65,10 +75,10 @@ header{
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    
 
     .text-content {
-      padding-left: 1%;
+      padding-left: 2%;
       padding-right: 0;
 
     @media @mobile{
