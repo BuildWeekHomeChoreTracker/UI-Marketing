@@ -327,6 +327,9 @@ header .header-one h2 {
 .content-destination .content-destination1 {
   display: flex;
 }
+.content-destination p {
+  padding-left: 2%;
+}
 .content-destination .content-destination2 {
   display: flex;
 }
